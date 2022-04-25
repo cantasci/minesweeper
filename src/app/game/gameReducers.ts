@@ -23,6 +23,11 @@ const gameSlice = createSlice({
   name: 'game',
   initialState,
   reducers: {
+    createNewGame(state) {
+      state.level = 1;
+      state.message = '';
+      state.map = [];
+    },
     setMap(state, action) {
       state.map = convertMapPayload(action.payload);
     },
@@ -35,6 +40,6 @@ const gameSlice = createSlice({
   },
 });
 
-export const { setMap, setLevel, updateMessage } = gameSlice.actions;
+export const { setMap, setLevel, updateMessage, createNewGame } = gameSlice.actions;
 
 export const gameReducer = gameSlice.reducer;

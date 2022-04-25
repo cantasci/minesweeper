@@ -2,7 +2,7 @@ import { eventChannel } from 'redux-saga';
 import { take, put, call, apply, fork } from 'redux-saga/effects';
 
 import { GameClient, Socket } from './gameClient';
-import { setMap, updateMessage } from './gameReducers';
+import { createNewGame, setMap, updateMessage } from './gameReducers';
 
 function createSocketChannel(socket: Socket) {
   return eventChannel((emit) => {
@@ -44,6 +44,7 @@ export function* watchOnGame(): any {
         yield put(setMap(data));
       }
       if (data.includes('new:')) {
+        yield put(createNewGame());
         yield fork(getMap, socket);
       }
       if (data.includes('open:')) {

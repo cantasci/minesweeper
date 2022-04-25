@@ -51,7 +51,7 @@ describe('<App />', () => {
       </Provider>
     );
     expect(wrapper.text().includes('Minesweeper')).toBe(true);
-    expect(wrapper.text().includes('Press START and start playing Minesweeper!')).toBe(true);
+    expect(wrapper.text().includes('Press START to play Minesweeper!')).toBe(true);
     expect(wrapper.text().includes('Start')).toBe(true);
   });
   it('Start button appears in first render', async () => {
@@ -82,6 +82,6 @@ describe('<App />', () => {
       </Provider>
     );
 
-    expect(wrapper.getByText('Play again')).toBeTruthy();
+    expect(wrapper.getByText('Restart')).toBeTruthy();
   });
 });

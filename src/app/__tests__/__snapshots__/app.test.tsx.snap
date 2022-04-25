@@ -5,7 +5,7 @@ exports[`<App /> renders correctly and to match snapshot 1`] = `
   className="css-1c3w8ki"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-xnkt1k-MuiPaper-root"
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-6z4eq8-MuiPaper-root"
   >
     <div
       className="css-0"
@@ -15,25 +15,25 @@ exports[`<App /> renders correctly and to match snapshot 1`] = `
       >
         Minesweeper
       </p>
-      <p
-        className="css-1dij4kc"
-      >
-        
-      </p>
     </div>
+    <p
+      className="css-1dij4kc"
+    >
+      
+    </p>
     <p
       className="MuiTypography-root MuiTypography-body1 css-f8nw7v-MuiTypography-root"
     >
       Press START to play Minesweeper!
     </p>
     <div
-      className="makeStyles-container-3"
+      className="makeStyles-container-2"
     >
       <div
-        className="makeStyles-content-4"
+        className="makeStyles-content-3"
       >
         <div
-          className="MuiFormControl-root MuiFormControl-fullWidth makeStyles-levelSelector-6 css-q8hpuo-MuiFormControl-root"
+          className="MuiFormControl-root MuiFormControl-fullWidth makeStyles-levelSelector-5 css-q8hpuo-MuiFormControl-root"
         >
           <label
             className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
@@ -97,7 +97,7 @@ exports[`<App /> renders correctly and to match snapshot 1`] = `
           </div>
         </div>
         <button
-          className="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root makeStyles-startButton-5 css-ke5b6m-MuiButtonBase-root-MuiButton-root"
+          className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root makeStyles-startButton-4 css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
           data-testid="start-game-btn"
           disabled={false}
           onBlur={[Function]}
@@ -121,7 +121,7 @@ exports[`<App /> renders correctly and to match snapshot 1`] = `
       </div>
     </div>
     <div
-      className="makeStyles-content-1 makeStyles-smallContent-2"
+      className="makeStyles-content-1"
     />
   </div>
 </div>

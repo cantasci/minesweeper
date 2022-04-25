@@ -10,7 +10,7 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks';
 export const useLevelSelectionStyle = makeStyles({
   levelSelector: {
     maxWidth: '180px !important',
-    height: 50,
+    height: 55,
   },
 });
 

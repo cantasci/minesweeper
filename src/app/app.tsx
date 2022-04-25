@@ -12,18 +12,15 @@ import Layout from './common/layout';
 import GameControl from './game/gameControl';
 import GameOnboarding from './game/gameOnboarding';
 import { initializeGame } from './game/gameReducers';
+import GameStatus from './game/gameStatus';
 import { GameTable } from './game/gameTable';
 
 export const useAppStyles = makeStyles({
   content: {
     display: 'flex',
-    overflow: 'scroll',
     flexDirection: 'column',
     margin: 30,
-  },
-  smallContent: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    maxWidth: '100%',
   },
 });
 
@@ -54,17 +51,12 @@ function App() {
       <CssBaseline />
       <ThemeProvider theme={lightTheme}>
         <Layout>
-          <Header title="Minesweeper" status={renderMessage(gameState.message)} />
+          <Header title="Minesweeper" />
+          <GameStatus status={renderMessage(gameState.message)} />
           {!hasData ? <GameOnboarding /> : null}
           <GameControl />
 
-          <div
-            className={
-              gameState.map.length <= 10
-                ? `${classes.content} ${classes.smallContent}`
-                : classes.content
-            }
-          >
+          <div className={classes.content}>
             {hasData ? <GameTable gameMap={gameState.map} isRunning={isRunning} /> : null}
           </div>
         </Layout>

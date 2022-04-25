@@ -9,17 +9,10 @@ const Title = styled('p')(() => ({
   fontSize: 32,
 }));
 
-const Status = styled('p')(() => ({
-  fontSize: 20,
-  fontWeight: 'bold',
-  color: 'red',
-}));
-
-const Header: FC<{ title: string; status?: string }> = ({ title, status }) => {
+const Header: FC<{ title: string }> = ({ title }) => {
   return (
     <Outer>
       <Title>{title}</Title>
-      <Status>{status}</Status>
     </Outer>
   );
 };

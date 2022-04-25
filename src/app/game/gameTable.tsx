@@ -11,6 +11,11 @@ export const useGameTableStyles = makeStyles({
     flexDirection: 'row',
     alignItems: 'center',
   },
+
+  outer: {
+    maxWidth: '100%',
+    overflow: 'scroll',
+  },
 });
 
 interface Props {
@@ -60,5 +65,5 @@ export const GameTable: FC<Props> = ({ gameMap, isRunning }) => {
     });
   };
 
-  return <>{renderMap()}</>;
+  return <div className={classes.outer}>{renderMap()}</div>;
 };

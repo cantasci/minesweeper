@@ -19,16 +19,15 @@ const Container = styled('div')(() => ({
 
 export const Content = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-  width: '80%',
-  height: '90%',
-  borderStyle: 'solid',
-  borderWidth: 1,
-  borderRadius: 10,
-  borderColor: 'transparent',
   display: 'flex',
+  width: '100%',
+  paddingInline: 16,
   flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: theme.palette.text.secondary,
+  textAlign: 'center',
+  maxWidth: '100%',
 }));
 
 const StyledLayout: FC = ({ children }) => {

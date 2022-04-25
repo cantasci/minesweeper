@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameOnboarding /> renders correctly and to match snapshot 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 css-f8nw7v-MuiTypography-root"
+>
+  Press START to play Minesweeper!
+</p>
+`;

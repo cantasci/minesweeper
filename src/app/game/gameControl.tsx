@@ -45,8 +45,8 @@ function GameControl() {
         <GameLevelSelection />
         <Button
           onClick={onPlayGame}
-          variant="contained"
-          color="success"
+          variant="outlined"
+          color="primary"
           className={classes.startButton}
           data-testid="start-game-btn"
         >
